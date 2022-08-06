@@ -12,12 +12,13 @@ body {
   background-color: hsl(216, 12%, 8%);
   color: hsl(0, 0%, 100%);
   line-height: 1.5;
+  padding: 0.9rem;
 }
 
 .container {
-  max-width: 420px;
+  max-width: 300px;
   margin: 0 auto;
-  border: 3px solid black;
+  border: none;
   border-radius: 1.4rem;
   padding: 2rem;
   background-color: hsl(213, 19%, 18%);
@@ -36,20 +37,21 @@ body {
 .feedback {
   color: hsla(0, 0%, 100%, 0.603);
   margin-top: 0.8rem;
-  font-size: 15px;
-  
+  font-size: 15px; 
 }
+
 .btns {
   margin-top: 1.2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .btn {
   border: none;
+  margin: auto;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.18);
-  padding: 1rem 1.3rem;
+  padding: 0.7rem 1.3rem;
   color: #fff;
   font-size: 1.4rem;
   cursor: grab;
@@ -83,8 +85,6 @@ body {
   color: hsl(25, 97%, 53%);
 }
 
-
-
 .modal {
   max-width: 420px;
   text-align: center;
@@ -101,12 +101,11 @@ body {
 
 .rating {
   color: hsl(25, 97%, 53%);
-  width: 50%;
+  width: 80%;
   margin: 0.5rem auto;
   border-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.18);
   padding: 0.4rem 0.3rem;
-  
 }
 
 .modal p:nth-child(3) {
@@ -117,5 +116,15 @@ body {
 
 .modal p:nth-child(4) {
   padding: 1.4rem 0;
+}
+
+@media(min-width: 600px) {
+  .container {
+    max-width: 450px;
+  }
+
+  .btns {
+    justify-content: space-between;
+  }
 }
 
